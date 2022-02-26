@@ -21,8 +21,6 @@ def request_pages():
     json_dump = json.dumps(data_set)
     return json_dump
 
-def stringToBase64(s):
-    return base64.b64encode(s.encode('utf-8'))
 
 @app.route('/', methods=['POST'])
 def request_page():
@@ -117,8 +115,8 @@ def request_page():
     json_dump = json.dumps(data_set)
     return json_dump
 
-if __name__ == '__main__':
-    app.run()
+# if __name__ == '__main__':
+#     app.run()
     
 
     
