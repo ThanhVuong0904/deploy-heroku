@@ -4,7 +4,6 @@ import urllib.request
 import cv2
 import argparse
 from flask import *
-from flask_restful import Resource, Api
 from flask_cors import CORS, cross_origin
 from face_detection import select_face
 from face_swap import face_swap
@@ -14,7 +13,6 @@ import base64
 import json
 
 app = Flask(__name__)
-api = Api(app)
 CORS(app)
 
 @app.route('/')
