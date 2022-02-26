@@ -15,11 +15,9 @@ import json
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/', methods=['GET'])
-def request_pages():
-    data_set = {'Success': 'True', 'Message': 'g'}
-    json_dump = json.dumps(data_set)
-    return json_dump
+@app.route('/')
+def index():
+    return "<h1>Welcome to our server !!</h1>"
 
 
 @app.route('/', methods=['POST'])
@@ -115,8 +113,8 @@ def request_page():
     json_dump = json.dumps(data_set)
     return json_dump
 
-# if __name__ == '__main__':
-#     app.run()
+if __name__ == '__main__':
+    app.run(port=5000)
     
 
     
