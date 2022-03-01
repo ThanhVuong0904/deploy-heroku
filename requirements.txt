@@ -10,3 +10,5 @@ gunicorn
 passlib
 Werkzeug
 gevent
+django
+django-heroku
