@@ -8,6 +8,5 @@ scipy
 urllib3
 gunicorn
 passlib
-SQLAlchem
 Werkzeug
 gevent
